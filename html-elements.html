@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>HTML Elements</title>
+  </head>
+  <body>
+  <h1>HTML Elements</h1>
+  <p>
+    Please fill out the form below and submit. We will contact you at our earliest.
+  </p>
+   <form action="capture.php" method="get">
+     <fieldset>
+        <legend>Info</legend>
+     <table>
+         
+       <tr>
+           <td><label for="Name">Name</label></td>
+           <td><input type="text" id="Name" name="Name" required></td>
+       </tr>
+         
+       <tr>
+           <td><label for="topics">Topics</label></td>
+           <td>
+            <select id="topics" name="topics">
+              <option value="topic_html">HTML</option>
+              <option value="topic_CSS">CSS</option>
+              <option value="topic_JavaScript">JavaScript</option>
+              <option value="topic_PHP">PHP</option>
+            </select>           
+           </td>
+       </tr>
+         
+         <tr>
+             <td><label for="message">Message</label></td>
+             <td>
+            <textarea id="message" name="message" rows="8" cols="70"></textarea>          
+             </td>
+         </tr>
+         
+         <tr>
+             <td>Student</td>
+             <td>
+                  <input type="radio" id="st_01" name="topicgroup" value="Gonagala">
+                  <label for="st_01">Ananda</label><br>
+                  <input type="radio" id="st_02" name="topicgroup" value="Maleesha">
+                  <label for="st_02">Maleesha</label><br>
+                  <input type="radio" id="st_03" name="topicgroup" value="Thimira">
+                  <label for="st_03">Thimira</label><br>      
+                  <input type="radio" id="st_04" name="topicgroup" value="Kanishkaran">
+                  <label for="st_04">Kanishkaran</label>              
+           </td>
+         </tr>  
+         
+         <tr><td></td><td><hr></td></tr>
+         
+         <tr>
+             <td>Sport</td>
+             <td>
+                  <input type="checkbox" id="sport1" name="sport[]" value="Cricket">
+                  <label for="sport1"> Cricket</label><br>
+                  <input type="checkbox" id="sport2" name="sport[]" value="Soccer">
+                  <label for="sport2"> Football</label><br>
+                  <input type="checkbox" id="sport3" name="sport[]" value="Rugby">
+                  <label for="sport3"> Rugby</label>           
+           </td>
+         </tr>
+         
+         <tr>
+             <td><label for="registered">Date Registered</label></td>
+             <td>
+                  <input type="date" id="registered" name="registered">       
+           </td>
+         </tr>
+         
+         <tr>
+             <td><label for="email">Email</label></td>
+             <td>
+                    <input type="email" id="email" name="email">      
+           </td>
+         </tr> 
+         
+         <tr>
+             <td><label for="password">Password</label></td>
+             <td>
+                    <input type="password" id="password" name="password">      
+           </td>
+         </tr> 
+         
+         <tr>
+             <td><label for="upload">Upload CV</label></td>
+             <td>
+                    <input type="file" id="upload" name="upload">      
+           </td>
+         </tr> 
+         
+         <tr>
+             <td><label for="age">Age(between 13 and 19)</label></td>
+             <td>
+                    <input type="number" id="age" name="age" min="13" max="19">     
+           </td>
+         </tr> 
+         
+         <tr>
+             <td><label for="agerange">Age Range(between 13 and 19)</label></td>
+             <td>
+                    <input type="range" id="agerange" name="agerange" min="13" max="19">     
+           </td>
+         </tr>
+
+       <tr><td></td><td><input type="submit" name="submit" value="submit"></td></tr>
+     </table>
+     </fieldset>
+   </form>
+  </body>
+</html>
